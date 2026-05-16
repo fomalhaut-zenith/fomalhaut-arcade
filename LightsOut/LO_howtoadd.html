@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホーム画面への追加方法</title>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1a1410;
+    --bg2: #231c16;
+    --gold: #c9954a;
+    --gold2: #e8b96a;
+    --off-border: #453020;
+    --paper: #f5edd8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: var(--paper);
+    padding: 32px 20px 48px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 10%, rgba(201,149,74,0.07) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .header-sub {
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--paper);
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-shadow: 0 0 20px rgba(245,200,66,0.2);
+  }
+  .header-note {
+    font-size: 12px;
+    color: var(--gold);
+    opacity: 0.7;
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+  }
+
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--off-border), transparent);
+    margin: 28px 0;
+  }
+
+  /* OSセクション */
+  .os-section {
+    background: var(--bg2);
+    border: 1px solid var(--off-border);
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .os-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,149,74,0.35), transparent);
+  }
+
+  .os-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .os-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .os-icon.ios { background: rgba(201,149,74,0.15); border: 1px solid rgba(201,149,74,0.3); }
+  .os-icon.android { background: rgba(100,180,100,0.12); border: 1px solid rgba(100,180,100,0.25); }
+
+  .os-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gold2);
+    letter-spacing: 0.1em;
+  }
+  .os-sub {
+    font-size: 10px;
+    color: var(--paper);
+    opacity: 0.45;
+    letter-spacing: 0.05em;
+  }
+
+  /* ステップ */
+  .step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step:last-child { margin-bottom: 0; }
+
+  .step-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(201,149,74,0.15);
+    border: 1px solid rgba(201,149,74,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .step-body { flex: 1; }
+
+  .step-text {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: var(--paper);
+    opacity: 0.88;
+  }
+
+  .step-text em {
+    font-style: normal;
+    color: var(--gold2);
+    font-weight: 700;
+  }
+
+  .step-note {
+    font-size: 11px;
+    color: var(--paper);
+    opacity: 0.45;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+
+  /* フッター */
+  .footer {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .footer-text {
+    font-size: 11px;
+    color: var(--gold);
+    opacity: 0.5;
+    letter-spacing: 0.15em;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-sub">SETUP GUIDE</div>
+  <h1>ホーム画面への<br>追加方法</h1>
+  <div class="header-note">
+    一度追加すると、アプリのように<br>すぐ起動できるようになります。
+  </div>
+</div>
+
+<!-- iPhone / Safari -->
+<div class="os-section">
+  <div class="os-label">
+    <div class="os-icon ios">🍎</div>
+    <div>
+      <div class="os-name">iPhone / iPad</div>
+      <div class="os-sub">Safari ブラウザで開いてください</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <div class="step-text"><em>Safari</em> でゲームのページを開く</div>
+      <div class="step-note">※ Chrome など他のブラウザでは追加できません</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <div class="step-text">画面下中央の <em>共有ボタン</em>（□に↑のマーク）をタップ</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <div class="step-text">メニューをスクロールして <em>「ホーム画面に追加」</em> をタップ</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <div class="step-text">名前を確認して右上の <em>「追加」</em> をタップ</div>
+      <div class="step-note">名前はそのままでOKです</div>
+    </div>
+  </div>
+</div>
+
+<!-- Android / Chrome -->
+<div class="os-section">
+  <div class="os-label">
+    <div class="os-icon android">🤖</div>
+    <div>
+      <div class="os-name">Android</div>
+      <div class="os-sub">Chrome ブラウザで開いてください</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <div class="step-text"><em>Chrome</em> でゲームのページを開く</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <div class="step-text">右上の <em>「⋮」</em>（3点メニュー）をタップ</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <div class="step-text"><em>「ホーム画面に追加」</em> をタップ</div>
+      <div class="step-note">機種によって「アプリをインストール」と表示される場合もあります</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <div class="step-text"><em>「追加」</em> をタップして完了</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-text">
+    追加後はホーム画面のアイコンから<br>いつでも起動できます。
+  </div>
+</div>
+
+</body>
+</html>

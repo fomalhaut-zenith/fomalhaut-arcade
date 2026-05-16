@@ -1,0 +1,6 @@
+# ワークスペースファイル
+*.code-workspace
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
