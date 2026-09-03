@@ -64,7 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     let topMeta = '';
                     let bottomDetails = '';
 
-                    if (sInfo.key === 'flash_memory') {
+                    if (sInfo.key === 'sleep_corridor') {
+                        topMeta = `<div class="card-meta-top">[TYPE]: ${item.type}</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span>DURATION: ${item.duration}</span>
+                                <span style="color: var(--amber-glow);">[NICONICO PLAYER]</span>
+                            </div>
+                        `;
+                    } else if (sInfo.key === 'flash_memory') {
                         topMeta = `<div class="card-meta-top">[CYCLE: 25/5]</div>`;
                         bottomDetails = `
                             <div class="card-details">

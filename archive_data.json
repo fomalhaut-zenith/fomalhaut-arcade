@@ -29,17 +29,18 @@
     "items": [
       {
         "id": "sc-01",
+        "title": "【睡眠用BGM】線香花火と静かな夜風【癒し系】",
+        "duration": "01:00:00",
+        "type": "Sleep / Chill",
+        "url": "https://www.nicovideo.jp/watch/sm46692800",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46692800/script?w=320&h=180"
+      },
+      {
+        "id": "sc-02",
         "title": "微睡みの周波数 - 432Hz Ambient",
         "duration": "01:00:00",
         "type": "Ambient",
         "url": "https://www.youtube.com/watch?v=example3"
-      },
-      {
-        "id": "sc-02",
-        "title": "星屑の漂流 - Deep Sleep Lofi",
-        "duration": "01:30:00",
-        "type": "Sleep Lofi",
-        "url": "https://www.youtube.com/watch?v=example4"
       }
     ]
   },
