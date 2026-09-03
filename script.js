@@ -22,13 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSectors(data) {
         sectorsContainer.innerHTML = '';
 
-        // 各エリアの定義順
+        // 各エリアの定義
         const sectorKeys = [
             { key: 'deep_sector', class: 'sector-deep_sector' },
             { key: 'sleep_corridor', class: 'sector-sleep_corridor' },
             { key: 'flash_memory', class: 'sector-flash_memory' },
             { key: 'lite_vault', class: 'sector-lite_vault' },
             { key: 'freq_lab', class: 'sector-freq_lab' },
+            { key: 'vocal_shelf', class: 'sector-vocal_shelf' },
             { key: 'glitch_sector', class: 'sector-glitch_sector' }
         ];
 
@@ -96,6 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
                             </div>
                         `;
+                    } else if (sInfo.key === 'vocal_shelf') {
+                        topMeta = `<div class="card-meta-top">[VOCAL SPECIMEN]</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span>DURATION: ${item.duration}</span>
+                                <span style="color: var(--pale-ash);">[NICONICO PLAYER]</span>
+                            </div>
+                        `;
                     } else {
                         topMeta = `<div class="card-meta-top">[EMBED PLAYER]</div>`;
                         bottomDetails = `
@@ -147,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.rel = 'noopener noreferrer';
                 card.className = 'archive-card';
 
-                // エリア別固有のHTML構造・スペック表記の組み立て
+                // エリア固有のHTML構造・スペック表記の組み分け
                 let topMeta = '';
                 let bottomDetails = '';
 
