@@ -20,6 +20,7 @@ Fomalhaut Archive（サイト全体）
 │   ├─ 短編記憶断片集（Flash Memory / 30min Cycles）
 │   ├─ 軽量記憶アーカイブ（Lite-Data Vault / Express Tracks）
 │   ├─ 周波数標本室（Scientific / Noise / Tuning）
+│   ├─ 蒐集品棚（Vocal Specimen Shelf）
 │   └─ エラー・記録不備あり（Glitch / Analog Horror / Unstable）
 ├─ Fomalhaut Arcade（サブ：発掘されたレトロゲーム）
 └─ 発信経路（SNSハブ）
@@ -138,6 +139,20 @@ Amber Glow は「休息（Rest）」と「レトロゲーム層」の2用途に�
 - **デザイン**：鉱物や波形データを分類する研究室風。グリッド線が明確な実験用インターフェース
 - **演出**：動画サムネイル下に `528Hz` `432Hz` `White Noise` 等のタグが波形メーター風アイコンと共に整然と並ぶ
 
+#### 蒐集品棚（Vocal Specimen Shelf）
+
+> 観測者が偶然にも「声」を宿した記憶を採取した、特異な標本群。旋律だけでなく、言葉と感情の断片までもが
+> 結晶化して残されている。Suno AIによるボーカル楽曲（例：狂酔花合わせ）を収蔵するエリア。
+
+- **フレーバーテキスト**：「言葉を持つ記憶は稀少である。観測者はそれを一つ一つ、棚に並べ、静かに息づかせている」
+- **デザイン**：ガラス棚に並ぶ標本瓶のイメージ。他の記録庫エリアより照明を落とし、瓶の中に波形が
+  ぼんやり光って揺れる演出（Pale Ashの淡い光、瓶ごとに曲の波形が微かに違う動きをする）
+- **演出**：ホバーで瓶にスポットライトが当たり、波形が声紋のように脈打つ。クリックで棚から
+  取り出すような開閉アニメーション
+- **カード上の情報表示（スペック表記風）**
+  - `[SPECIMEN]: VOCAL DATA DETECTED`
+  - `[COMPOSER]: Suno AI`
+
 #### エラー・記録不備あり（Glitch / Analog Horror / Unstable）
 
 - **デザイン**：他エリアと異なり、フレームが歪む／テキストが一部文字化け（Glitch）。
@@ -248,7 +263,7 @@ Amber Glow は「休息（Rest）」と「レトロゲーム層」の2用途に�
 | --- | --- |
 | `id` | 動画の一意識別子（半角英数） |
 | `title` | 動画タイトル |
-| `sector` | 記録庫内の分類（`deep_archive` / `sleep_corridor` / `flash_memory` / `lite_vault` / `frequency_lab` / `error_unstable` 等） |
+| `sector` | 記録庫内の分類（`deep_archive` / `sleep_corridor` / `flash_memory` / `lite_vault` / `frequency_lab` / `vocal_shelf` / `error_unstable` 等） |
 | `type` | 埋め込み方式（`niconico` / `direct`） |
 | `source` | `type: niconico`の場合は動画ID（例：`sm12345678`）。`type: direct`の場合はURL |
 | `duration` | 再生時間（軽量記憶アーカイブ等の時間表示にも流用） |
@@ -266,3 +281,4 @@ Amber Glow は「休息（Rest）」と「レトロゲーム層」の2用途に�
 
 作成日：2026年9月2日　Fomalhaut Archive デザイン仕様
 更新：2026年9月3日（動画埋め込み・データ管理方式を追記）
+更新：2026年9月3日（記録庫に「蒐集品棚」エリアを追加）
