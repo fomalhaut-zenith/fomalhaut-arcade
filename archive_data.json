@@ -50,17 +50,18 @@
     "items": [
       {
         "id": "fm-01",
+        "title": "【ポモドーロ】水中都市の遺構を巡るファンタジーBGM",
+        "cycle": "25 MIN FOCUS / 5 MIN BREAK",
+        "genre": "Fantasy / Ambient",
+        "url": "https://www.nicovideo.jp/watch/sm46744050",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46744050/script?w=320&h=180"
+      },
+      {
+        "id": "fm-02",
         "title": "朝霧のプロトコル (25/5 Cycle)",
         "cycle": "25 MIN FOCUS / 5 MIN BREAK",
         "genre": "Celtic / Lo-Fi",
         "url": "https://www.youtube.com/watch?v=example5"
-      },
-      {
-        "id": "fm-02",
-        "title": "真夜中の研究棟 (25/5 Cycle)",
-        "cycle": "25 MIN FOCUS / 5 MIN BREAK",
-        "genre": "Dark Ambient / Synth",
-        "url": "https://www.youtube.com/watch?v=example6"
       }
     ]
   },
@@ -114,10 +115,19 @@
     "items": [
       {
         "id": "gs-01",
-        "title": "[ERR_CORRUPT] 消失したセクターの断片",
+        "title": "おぼえていますか。",
         "status": "UNSTABLE / CRC_ERROR",
+        "warning": "ANALOG HORROR",
+        "url": "https://www.nicovideo.jp/watch/sm46731651",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46731651/script?w=320&h=180"
+      },
+      {
+        "id": "gs-02",
+        "title": "頂点、開放。",
+        "status": "CORRUPT / SIGNAL_LOST",
         "warning": "HIGH INTENSITY NOISE",
-        "url": "https://www.youtube.com/watch?v=example11"
+        "url": "https://www.nicovideo.jp/watch/sm46680103",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46680103/script?w=320&h=180"
       }
     ]
   }

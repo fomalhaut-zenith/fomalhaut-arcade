@@ -61,13 +61,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     const embedContainer = document.createElement('div');
                     embedContainer.className = 'archive-card embed-card';
 
-                    const topMeta = `<div class="card-meta-top">[DURATION: ${item.duration}] - [EMBED]</div>`;
-                    const bottomDetails = `
-                        <div class="card-details">
-                            <span>${item.type}</span>
-                            <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
-                        </div>
-                    `;
+                    let topMeta = '';
+                    let bottomDetails = '';
+
+                    if (sInfo.key === 'flash_memory') {
+                        topMeta = `<div class="card-meta-top">[CYCLE: 25/5]</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span>GENRE: ${item.genre}</span>
+                                <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
+                            </div>
+                        `;
+                    } else if (sInfo.key === 'glitch_sector') {
+                        topMeta = `<div class="card-meta-top" style="color: #EC4899;">${item.status}</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span style="color: #EC4899;">${item.warning}</span>
+                                <span>[NICONICO PLAYER]</span>
+                            </div>
+                        `;
+                    } else if (sInfo.key === 'lite_vault') {
+                        topMeta = `<div class="card-meta-top">[DURATION: ${item.duration}] - [EMBED]</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span>${item.type}</span>
+                                <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
+                            </div>
+                        `;
+                    } else {
+                        topMeta = `<div class="card-meta-top">[EMBED PLAYER]</div>`;
+                        bottomDetails = `
+                            <div class="card-details">
+                                <span>STATUS: READY</span>
+                                <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
+                            </div>
+                        `;
+                    }
 
                     const playerBox = document.createElement('div');
                     playerBox.className = 'embed-player-box';
@@ -84,9 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     playerBox.appendChild(scriptTag);
                     playerBox.appendChild(noscriptTag);
 
+                    let middleContent = `<h4 class="card-title" style="margin-bottom: 12px;">${item.title}</h4>`;
+                    if (sInfo.key === 'flash_memory') {
+                        middleContent = `
+                            <div class="cycle-badge">${item.cycle}</div>
+                            <h4 class="card-title" style="margin-bottom: 12px;">${item.title}</h4>
+                        `;
+                    }
+
                     embedContainer.innerHTML = `
                         ${topMeta}
-                        <h4 class="card-title" style="margin-bottom: 12px;">${item.title}</h4>
+                        ${middleContent}
                     `;
                     embedContainer.appendChild(playerBox);
                     embedContainer.insertAdjacentHTML('beforeend', bottomDetails);
