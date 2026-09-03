@@ -1,12 +1,12 @@
 {
   "deep_sector": {
-    "title": "深部アーカイブ",
+    "title": "ディープアーカイブ",
     "subtitle": "Deep Sector Archive",
-    "desc": "幾層もの世界線を抜け、最も深い階層で観測された密度の高い記憶群。",
+    "desc": "星々の深層を貫く、深層階級で観察された高密度の長編記憶群。",
     "items": [
       {
         "id": "ds-01",
-        "title": "深淵の観測記録 #01 - 夜想曲の残響",
+        "title": "深層の観察記録 #01 - 抽象の残響",
         "duration": "02:14:00",
         "tracks": "12 Tracks",
         "code": "SEC-DEEP-001",
@@ -14,7 +14,7 @@
       },
       {
         "id": "ds-02",
-        "title": "深淵の観測記録 #02 - 凍てついた星図",
+        "title": "深層の観察記録 #02 - 凍てついた水脈",
         "duration": "03:45:00",
         "tracks": "18 Tracks",
         "code": "SEC-DEEP-002",
@@ -25,11 +25,11 @@
   "sleep_corridor": {
     "title": "眠りの回廊",
     "subtitle": "Sleep / Ambient",
-    "desc": "水底や星空を思わせる深い静寂。すりガラス越しに揺らめくアンビエント空間。",
+    "desc": "静寂や星空を彷彿とさせる深層安息帯。薄いガラス越しに揺らぐ、アンビエント空間。",
     "items": [
       {
         "id": "sc-01",
-        "title": "【睡眠用BGM】線香花火と静かな夜風【癒し系】",
+        "title": "【睡眠用BGM】静かな夜に漂うアンビエント",
         "duration": "01:00:00",
         "type": "Sleep / Chill",
         "url": "https://www.nicovideo.jp/watch/sm46692800",
@@ -37,7 +37,7 @@
       },
       {
         "id": "sc-02",
-        "title": "微睡みの周波数 - 432Hz Ambient",
+        "title": "深緑の周波 - 432Hz Ambient",
         "duration": "01:00:00",
         "type": "Ambient",
         "url": "https://www.youtube.com/watch?v=example3"
@@ -45,13 +45,13 @@
     ]
   },
   "flash_memory": {
-    "title": "短編記憶断片集",
+    "title": "閃光記憶片段集",
     "subtitle": "Flash Memory / 30min Cycles",
-    "desc": "25分の「集中」と5分の「休息」という最小単位の周期（ポモドーロ）に切り取られた同期データ。",
+    "desc": "25分の「集中」と5分の「休息」という最小単位の周期（ポモドーロ）に切り分けられた思考データ。",
     "items": [
       {
         "id": "fm-01",
-        "title": "【ポモドーロ】水中都市の遺構を巡るファンタジーBGM",
+        "title": "【ポモドーロ】作業用ファンタジーBGM",
         "cycle": "25 MIN FOCUS / 5 MIN BREAK",
         "genre": "Fantasy / Ambient",
         "url": "https://www.nicovideo.jp/watch/sm46744050",
@@ -59,7 +59,7 @@
       },
       {
         "id": "fm-02",
-        "title": "朝霧のプロトコル (25/5 Cycle)",
+        "title": "古代のプロトコル (25/5 Cycle)",
         "cycle": "25 MIN FOCUS / 5 MIN BREAK",
         "genre": "Celtic / Lo-Fi",
         "url": "https://www.youtube.com/watch?v=example5"
@@ -73,7 +73,7 @@
     "items": [
       {
         "id": "lv-01",
-        "title": "【初投稿】空想リゾートのアトリエで流れる夏のボサノバ【作業用BGM】",
+        "title": "【作業用】ボサノバBGM",
         "duration": "10:00",
         "type": "NICONICO EMBED",
         "url": "https://www.nicovideo.jp/watch/sm46672963",
@@ -81,7 +81,7 @@
       },
       {
         "id": "lv-02",
-        "title": "クイックシンクロ・ショートトラック B",
+        "title": "クイックシンク・ショートトラック B",
         "duration": "15:00",
         "type": "SINGLE TRACK",
         "url": "https://www.youtube.com/watch?v=example8"
@@ -91,32 +91,55 @@
   "freq_lab": {
     "title": "周波数標本室",
     "subtitle": "Scientific / Noise / Tuning",
-    "desc": "鉱物や波形データを分類する研究室風の実験的インターフェース。",
+    "desc": "特定の波形データを分類する研究用領域。実験的インターフェース。",
     "items": [
       {
         "id": "fl-01",
-        "title": "周波数標本 528Hz - 活性化のノイズ",
+        "title": "周波数標本 528Hz - 幻想のノイズ",
         "freq": "528Hz",
         "type": "Sine Wave",
         "url": "https://www.youtube.com/watch?v=example9"
       },
       {
         "id": "fl-02",
-        "title": "ホワイトノイズ・スペクトラム分析",
+        "title": "ホワイトノイズ・スペクトル解析",
         "freq": "White Noise",
         "type": "Spectrum",
         "url": "https://www.youtube.com/watch?v=example10"
+      },
+      {
+        "id": "fl-03",
+        "title": "【完全比較】カラーノイズ7種 聴き比べ",
+        "freq": "7 Colors",
+        "type": "Noise Spectrum",
+        "url": "https://www.nicovideo.jp/watch/sm46755538",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46755538/script?w=320&h=180"
+      }
+    ]
+  },
+  "vocal_shelf": {
+    "title": "蒐集品棚",
+    "subtitle": "Vocal Specimen Shelf",
+    "desc": "観察者が採集した歌唱記憶の展示棚。音色と旋律の標本。",
+    "items": [
+      {
+        "id": "vs-01",
+        "title": "【オリジナルMV】狂酔花合わせ",
+        "duration": "04:00",
+        "type": "NICONICO EMBED",
+        "url": "https://www.nicovideo.jp/watch/sm46712332",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46712332/script?w=320&h=180"
       }
     ]
   },
   "glitch_sector": {
     "title": "エラー・記録不備あり",
     "subtitle": "Glitch / Analog Horror / Unstable",
-    "desc": "フレームが歪み、テキストが一部文字化けした不穏な未解決セクター。",
+    "desc": "フレームの歪み、テキストの一部破損が観察される不安定な領域。",
     "items": [
       {
         "id": "gs-01",
-        "title": "おぼえていますか。",
+        "title": "ノイズの彼方へ。",
         "status": "UNSTABLE / CRC_ERROR",
         "warning": "ANALOG HORROR",
         "url": "https://www.nicovideo.jp/watch/sm46731651",
@@ -124,7 +147,7 @@
       },
       {
         "id": "gs-02",
-        "title": "頂点、開放。",
+        "title": "信号途絶。",
         "status": "CORRUPT / SIGNAL_LOST",
         "warning": "HIGH INTENSITY NOISE",
         "url": "https://www.nicovideo.jp/watch/sm46680103",
