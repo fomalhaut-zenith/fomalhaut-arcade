@@ -40,31 +40,37 @@
             <!-- Fomalhaut Arcade（発掘されたレトロゲーム） -->
             <section id="arcade-section" class="arcade-section">
                 <h2><span>EXCAVATED ARTIFACTS</span> <span class="divider">/</span> <span class="jp-text">発掘されたレトロゲーム</span></h2>
-                <p class="arcade-flavor"><code>[SYSTEM]: Unidentified binary files detected in Sector-07.</code><br>観測データ検索中、記憶の歪みから発掘された未知のプログラム。動作保証なし。</p>
+                <div class="dos-terminal-box">
+                    <div class="dos-bar">[SECTOR-07 BINARY_DUMP // READ-ONLY]</div>
+                    <p class="arcade-flavor"><code>[SYSTEM]: Unidentified binary files detected in Sector-07.</code><br>観測データ検索中、記憶の歪みから発掘された未知のプログラム。動作保証なし。</p>
+                </div>
                 
-                <div class="game-grid">
+                <div class="game-grid dos-grid">
                     <!-- LightsOut -->
-                    <article class="game-card" id="card-lights-out">
+                    <article class="game-card dos-card" id="card-lights-out">
+                        <div class="game-status-line"><span>EXEC: LIGHTSOUT.EXE</span><span class="amber-dot">●</span></div>
                         <img src="assets/icons/lights_out_icon.png" alt="ライツアウト" class="game-icon">
                         <h3 class="game-title">ライツアウト</h3>
-                        <p class="game-desc">すべてのライトを消せ。<br>タイルをクリックすると周囲のライトが連動して切り替わる、論理パズルゲーム。</p>
-                        <a href="./LightsOut/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                        <p class="game-desc">すべてのライトを消せ。<br>タイルをクリックすると周囲のライトが連動して切り替わる論理パズル。</p>
+                        <a href="./LightsOut/" target="_blank" rel="noopener noreferrer" class="play-button">LOAD PROGRAM &gt;</a>
                     </article>
 
                     <!-- Mosaic Slide -->
-                    <article class="game-card" id="card-mosaic-slide">
+                    <article class="game-card dos-card" id="card-mosaic-slide">
+                        <div class="game-status-line"><span>EXEC: MOSAIC_SLIDE.EXE</span><span class="amber-dot">●</span></div>
                         <img src="assets/icons/mosaic_slide_icon.png" alt="Mosaic Slide" class="game-icon">
                         <h3 class="game-title">Mosaic Slide</h3>
-                        <p class="game-desc">数字を正しい順番に並べろ。<br>タイルをスライドさせてパズルを完成させる、スライドパズルゲーム。</p>
-                        <a href="./Mosaic_Slide/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                        <p class="game-desc">数字を正しい順番に並べろ。<br>タイルをスライドさせてパズルを完成させるスライドパズル。</p>
+                        <a href="./Mosaic_Slide/" target="_blank" rel="noopener noreferrer" class="play-button">LOAD PROGRAM &gt;</a>
                     </article>
 
                     <!-- SNAPPY SHOT -->
-                    <article class="game-card" id="card-snappy-shot">
+                    <article class="game-card dos-card" id="card-snappy-shot">
+                        <div class="game-status-line"><span>EXEC: SNAPPY_SHOT.EXE</span><span class="amber-dot">●</span></div>
                         <img src="assets/icons/snappy_shot_icon.png" alt="SNAPPY SHOT" class="game-icon">
                         <h3 class="game-title">SNAPPY SHOT</h3>
-                        <p class="game-desc">スピードが命の精密射撃。<br>次々と現れるターゲットを素早く撃ち抜く、タイムアタック・シューティング。</p>
-                        <a href="./SnappyShot/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                        <p class="game-desc">スピードが命の精密射撃。<br>次々と現れるターゲットを素早く撃ち抜くタイムアタック・シューティング。</p>
+                        <a href="./SnappyShot/" target="_blank" rel="noopener noreferrer" class="play-button">LOAD PROGRAM &gt;</a>
                     </article>
                 </div>
             </section>
@@ -77,8 +83,8 @@
                         <div class="radar-sweep"></div>
                         <div class="antenna-icon">📡</div>
                         <div class="antenna-text">
-                            <span class="broadcast-label">SIGNAL BROADCAST</span>
-                            <span class="broadcast-sub">ESTABLISHING EXTERNAL LINK...</span>
+                            <span class="broadcast-label">SIGNAL BROADCAST standard frequencies</span>
+                            <span class="broadcast-sub">ESTABLISHING EXTERNAL LINK... [CLICK TO CONNECT]</span>
                         </div>
                     </div>
                 </div>
@@ -127,12 +133,16 @@
     <div id="link-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" id="close-modal-btn">&times;</button>
-            <div class="modal-header-terminal">EXTERNAL LINK TERMINAL</div>
-            <p class="modal-flavor">外部波長への同期要求を送信中。<br>観測者の各配信プラットフォーム・SNSハブへ接続します。</p>
+            <div class="modal-header-terminal">[TRANSMISSION TERMINAL: LINK_ID: FOMALHAUT_MUSIC]</div>
+            <p class="modal-flavor">
+                外部波長への同期要求を送信中。<br>
+                <code>ESTABLISHING EXTERNAL LINK...</code><br>
+                観測者の各配信プラットフォーム・SNSハブ（Lit.link）へ接続します。
+            </p>
             <div class="modal-actions">
-                <a href="https://lit.link/fomalhaut" target="_blank" rel="noopener noreferrer" class="litlink-btn">
-                    <span>CONNECT TO LIT.LINK</span>
-                    <span class="btn-sub">External Hub Site</span>
+                <a href="https://lit.link/fomalhaut_music" target="_blank" rel="noopener noreferrer" class="litlink-btn">
+                    <span>CONNECT TO LIT.LINK &gt;&gt;</span>
+                    <span class="btn-sub">https://lit.link/fomalhaut_music</span>
                 </a>
             </div>
         </div>
