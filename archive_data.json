@@ -45,7 +45,7 @@
     ]
   },
   "flash_memory": {
-    "title": "閃光記憶片段集",
+    "title": "短編記憶断片集",
     "subtitle": "Flash Memory / 30min Cycles",
     "desc": "25分の「集中」と5分の「休息」という最小単位の周期（ポモドーロ）に切り分けられた思考データ。",
     "items": [
@@ -114,6 +114,14 @@
         "type": "Noise Spectrum",
         "url": "https://www.nicovideo.jp/watch/sm46755538",
         "embed_script": "https://embed.nicovideo.jp/watch/sm46755538/script?w=320&h=180"
+      },
+      {
+        "id": "fl-04",
+        "title": "【2時間】ブラウンノイズ：集中・作業・睡眠用",
+        "freq": "Brown Noise",
+        "type": "Noise Spectrum",
+        "url": "https://www.nicovideo.jp/watch/sm46755862",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46755862/script?w=320&h=180"
       }
     ]
   },
