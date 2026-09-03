@@ -56,6 +56,46 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsGrid.className = 'sector-cards-grid';
 
             sectorData.items.forEach(item => {
+                // 埋め込みスクリプト指定がある場合はカード内に動画プレイヤーを表示
+                if (item.embed_script) {
+                    const embedContainer = document.createElement('div');
+                    embedContainer.className = 'archive-card embed-card';
+
+                    const topMeta = `<div class="card-meta-top">[DURATION: ${item.duration}] - [EMBED]</div>`;
+                    const bottomDetails = `
+                        <div class="card-details">
+                            <span>${item.type}</span>
+                            <span style="color: var(--cyan-pulse);">[NICONICO PLAYER]</span>
+                        </div>
+                    `;
+
+                    const playerBox = document.createElement('div');
+                    playerBox.className = 'embed-player-box';
+
+                    // 埋め込み用scriptタグの追加
+                    const scriptTag = document.createElement('script');
+                    scriptTag.type = 'application/javascript';
+                    scriptTag.src = item.embed_script;
+
+                    // noscriptの代替リンク追加
+                    const noscriptTag = document.createElement('noscript');
+                    noscriptTag.innerHTML = `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a>`;
+
+                    playerBox.appendChild(scriptTag);
+                    playerBox.appendChild(noscriptTag);
+
+                    embedContainer.innerHTML = `
+                        ${topMeta}
+                        <h4 class="card-title" style="margin-bottom: 12px;">${item.title}</h4>
+                    `;
+                    embedContainer.appendChild(playerBox);
+                    embedContainer.insertAdjacentHTML('beforeend', bottomDetails);
+
+                    cardsGrid.appendChild(embedContainer);
+                    return;
+                }
+
+                // 通常のリンクカード
                 const card = document.createElement('a');
                 card.href = item.url;
                 card.target = '_blank';

@@ -71,10 +71,11 @@
     "items": [
       {
         "id": "lv-01",
-        "title": "クイックシンクロ・ショートトラック A",
-        "duration": "12:00",
-        "type": "SINGLE TRACK",
-        "url": "https://www.youtube.com/watch?v=example7"
+        "title": "【初投稿】空想リゾートのアトリエで流れる夏のボサノバ【作業用BGM】",
+        "duration": "10:00",
+        "type": "NICONICO EMBED",
+        "url": "https://www.nicovideo.jp/watch/sm46672963",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46672963/script?w=320&h=180"
       },
       {
         "id": "lv-02",
