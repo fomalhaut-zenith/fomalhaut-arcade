@@ -3,48 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fomalhaut Arcade | Retro Game Hub</title>
-    <meta name="description" content="レトロな雰囲気のウェブゲームハブ。LightsOutやMosaic Slideなど、自作ゲームを公開中。">
+    <title>Fomalhaut Archive | Archive of the Silent Observer</title>
+    <meta name="description" content="『Archive of the Silent Observer（静かな観測者のアーカイブ）』。映像・音響記憶の収蔵庫と発掘されたレトロゲームのハブ。">
+    <!-- Google Fonts: Shippori Mincho, EB Garamond, VT323, Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,600&family=Noto+Sans+JP:wght@300;400;700&family=Shippori+Mincho:wght@600;700&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1 class="logo">Fomalhaut Arcade</h1>
+        <!-- ヘッダー / 観測室入口 -->
+        <header class="observer-header">
+            <div class="terminal-status-bar">
+                <span class="status-indicator">STATUS: OBSERVING...</span>
+                <span class="record-count-indicator">RECORD COUNT: [6 SECTORS]</span>
+            </div>
+            <h1 class="logo">Fomalhaut Archive</h1>
+            <p class="logo-sub">Archive of the Silent Observer</p>
         </header>
 
         <main>
-            <!-- ゲームギャラリー -->
-            <div class="game-grid">
-                <!-- LightsOut -->
-                <article class="game-card" id="card-lights-out">
-                    <img src="assets/icons/lights_out_icon.png" alt="ライツアウト" class="game-icon">
-                    <h3 class="game-title">ライツアウト</h3>
-                    <p class="game-desc">すべてのライトを消せ。<br>タイルをクリックすると周囲のライトが連動して切り替わる、論理パズルゲーム。</p>
-                    <a href="./LightsOut/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
-                </article>
+            <!-- 記録庫（動画保管庫 × 6エリア） -->
+            <section id="archive-vault" class="vault-section">
+                <div class="section-header-title">
+                    <h2><span>ARCHIVE VAULT</span> <span class="divider">/</span> <span class="jp-text">記録庫</span></h2>
+                    <p class="vault-intro">暗闇の中に浮かび上がる「音のガラス標本」の収蔵庫。</p>
+                </div>
 
-                <!-- Mosaic Slide -->
-                <article class="game-card" id="card-mosaic-slide">
-                    <img src="assets/icons/mosaic_slide_icon.png" alt="Mosaic Slide" class="game-icon">
-                    <h3 class="game-title">Mosaic Slide</h3>
-                    <p class="game-desc">数字を正しい順番に並べろ。<br>タイルをスライドさせてパズルを完成させる、スライドパズルゲーム。</p>
-                    <a href="./Mosaic_Slide/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
-                </article>
+                <!-- 各エリアが動的に生成されるコンテナ -->
+                <div id="sectors-container">
+                    <!-- JavaScriptでここに6エリアが展開されます -->
+                </div>
+            </section>
 
-                <!-- SNAPPY SHOT -->
-                <article class="game-card" id="card-snappy-shot">
-                    <img src="assets/icons/snappy_shot_icon.png" alt="SNAPPY SHOT" class="game-icon">
-                    <h3 class="game-title">SNAPPY SHOT</h3>
-                    <p class="game-desc">スピードが命の精密射撃。<br>次々と現れるターゲットを素早く撃ち抜く、タイムアタック・シューティング。</p>
-                    <a href="./SnappyShot/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
-                </article>
-            </div>
+            <!-- Fomalhaut Arcade（発掘されたレトロゲーム） -->
+            <section id="arcade-section" class="arcade-section">
+                <h2><span>EXCAVATED ARTIFACTS</span> <span class="divider">/</span> <span class="jp-text">発掘されたレトロゲーム</span></h2>
+                <p class="arcade-flavor"><code>[SYSTEM]: Unidentified binary files detected in Sector-07.</code><br>観測データ検索中、記憶の歪みから発掘された未知のプログラム。動作保証なし。</p>
+                
+                <div class="game-grid">
+                    <!-- LightsOut -->
+                    <article class="game-card" id="card-lights-out">
+                        <img src="assets/icons/lights_out_icon.png" alt="ライツアウト" class="game-icon">
+                        <h3 class="game-title">ライツアウト</h3>
+                        <p class="game-desc">すべてのライトを消せ。<br>タイルをクリックすると周囲のライトが連動して切り替わる、論理パズルゲーム。</p>
+                        <a href="./LightsOut/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                    </article>
+
+                    <!-- Mosaic Slide -->
+                    <article class="game-card" id="card-mosaic-slide">
+                        <img src="assets/icons/mosaic_slide_icon.png" alt="Mosaic Slide" class="game-icon">
+                        <h3 class="game-title">Mosaic Slide</h3>
+                        <p class="game-desc">数字を正しい順番に並べろ。<br>タイルをスライドさせてパズルを完成させる、スライドパズルゲーム。</p>
+                        <a href="./Mosaic_Slide/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                    </article>
+
+                    <!-- SNAPPY SHOT -->
+                    <article class="game-card" id="card-snappy-shot">
+                        <img src="assets/icons/snappy_shot_icon.png" alt="SNAPPY SHOT" class="game-icon">
+                        <h3 class="game-title">SNAPPY SHOT</h3>
+                        <p class="game-desc">スピードが命の精密射撃。<br>次々と現れるターゲットを素早く撃ち抜く、タイムアタック・シューティング。</p>
+                        <a href="./SnappyShot/" target="_blank" rel="noopener noreferrer" class="play-button">INSERT COIN</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 発信経路（SNSハブ / 通信アンテナ） -->
+            <section id="transmission" class="transmission-section">
+                <h2><span>TRANSMISSION ANTENNA</span> <span class="divider">/</span> <span class="jp-text">発信経路</span></h2>
+                <div class="antenna-hub">
+                    <div class="antenna-graphic" id="open-modal-btn" role="button" tabindex="0">
+                        <div class="radar-sweep"></div>
+                        <div class="antenna-icon">📡</div>
+                        <div class="antenna-text">
+                            <span class="broadcast-label">SIGNAL BROADCAST</span>
+                            <span class="broadcast-sub">ESTABLISHING EXTERNAL LINK...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- 更新履歴 -->
             <section id="updates">
                 <h2><span>LOGS</span> <span class="divider">/</span> <span class="jp-text">更新履歴</span></h2>
                 <ul class="update-list">
+                    <li class="update-item">
+                        <span class="date">2026.09.03</span>
+                        <span class="content">サイトを「Fomalhaut Archive（静かな観測者のアーカイブ）」へ全面リニューアル。</span>
+                    </li>
                     <li class="update-item">
                         <span class="date">2026.05.16</span>
                         <span class="content">新作「SNAPPY SHOT」を公開。サイトのデザインを微調整。</span>
@@ -52,10 +99,6 @@
                     <li class="update-item">
                         <span class="date">2026.04.22</span>
                         <span class="content">アーケードハブサイトを公開しました。</span>
-                    </li>
-                    <li class="update-item">
-                        <span class="date">2026.04.01</span>
-                        <span class="content">Mosaic Slide の操作感を改善しました。</span>
                     </li>
                 </ul>
             </section>
@@ -68,17 +111,33 @@
                         <p><strong>Fomalhaut</strong></p>
                         <p>AIを使いつつ、ゲーム制作、動画制作を行っています。</p>
                         <div class="sns-links">
-                            <a href="https://www.youtube.com/channel/UCgb0AYkGXaxWXh1SNCJQacA/" class="sns-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+                            <span class="sns-note">外部接続は通信アンテナ（Lit.link）経由で行われます。</span>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer style="text-align: center; margin-top: 40px; color: #555; font-size: 0.8rem;">
-            <p>&copy; 2026 Fomalhaut Arcade. All rights reserved.</p>
+        <footer style="text-align: center; margin-top: 40px; color: #555; font-size: 0.8rem; font-family: 'VT323', monospace;">
+            <p>&copy; 2026 Fomalhaut Archive. All rights reserved. [OBSERVER: ACTIVE]</p>
         </footer>
     </div>
+
+    <!-- 外部通信モーダル (Lit.link 導線) -->
+    <div id="link-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal-btn">&times;</button>
+            <div class="modal-header-terminal">EXTERNAL LINK TERMINAL</div>
+            <p class="modal-flavor">外部波長への同期要求を送信中。<br>観測者の各配信プラットフォーム・SNSハブへ接続します。</p>
+            <div class="modal-actions">
+                <a href="https://lit.link/fomalhaut" target="_blank" rel="noopener noreferrer" class="litlink-btn">
+                    <span>CONNECT TO LIT.LINK</span>
+                    <span class="btn-sub">External Hub Site</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
