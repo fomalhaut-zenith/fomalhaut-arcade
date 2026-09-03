@@ -196,4 +196,73 @@ Amber Glow は「休息（Rest）」と「レトロゲーム層」の2用途に�
 
 ---
 
+## 6. 動画埋め込み・データ管理方式（追記：2026年9月3日）
+
+記録庫の各セクションに実際の動画（ニコニコ動画の埋め込み、および将来的な直接埋め込み）を
+はめ込んでいくにあたっての仕様。ニコニコ埋め込みと直接埋め込み（動画ファイル直リンク等）が
+当面混在する見込みのため、両対応の構造で設計する。
+
+### 6-1. レスポンシブ対応
+
+ニコニコの埋め込みコードはデフォルトで`width`/`height`固定のため、そのままだとレイアウト崩れの
+原因になる。アスペクト比を保つラッパーで囲み、幅可変にする。
+
+```html
+<div class="video-embed-wrapper" style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9の場合 */">
+  <!-- ここに埋め込み本体（iframe等）が入る -->
+</div>
+```
+
+ラッパーのCSSは埋め込み方式（ニコニコ／直接）に関わらず共通化する。
+
+### 6-2. 動画データのJSON管理
+
+動画1件ごとに以下のスキーマでJSON管理し、`type`フィールドで埋め込み方法を出し分ける。
+埋め込み方式が今後増えた場合も`type`の種類を1つ追加するだけで対応できる設計とする。
+
+**ニコニコ埋め込みの場合**
+```json
+{
+  "id": "suikaru_toshi_pomodoro",
+  "title": "水中都市の遺構（ポモドーロ）",
+  "sector": "deep_archive",
+  "type": "niconico",
+  "source": "sm12345678",
+  "duration": "3:00:00"
+}
+```
+
+**直接埋め込みの場合**
+```json
+{
+  "id": "some_direct_video",
+  "title": "○○○○",
+  "sector": "sleep_corridor",
+  "type": "direct",
+  "source": "https://example.com/videos/xxx.mp4",
+  "duration": "2:19:00"
+}
+```
+
+| フィールド | 内容 |
+| --- | --- |
+| `id` | 動画の一意識別子（半角英数） |
+| `title` | 動画タイトル |
+| `sector` | 記録庫内の分類（`deep_archive` / `sleep_corridor` / `flash_memory` / `lite_vault` / `frequency_lab` / `error_unstable` 等） |
+| `type` | 埋め込み方式（`niconico` / `direct`） |
+| `source` | `type: niconico`の場合は動画ID（例：`sm12345678`）。`type: direct`の場合はURL |
+| `duration` | 再生時間（軽量記憶アーカイブ等の時間表示にも流用） |
+
+- `type: "niconico"` → レンダリング側で `https://embed.nicovideo.jp/watch/{source}` のiframeを自動生成
+- `type: "direct"` → `source`のURLをそのまま`<video>`タグ、または別形式のiframeで表示
+
+### 6-3. 実装依頼時のタスク分割（目安）
+
+1. `videos.json`（上記スキーマ）をセクションごとに用意
+2. JSONを読み込み、`type`に応じてニコニコ埋め込み／直接埋め込みのタグを出し分ける処理をカード側に実装
+3. アスペクト比維持のレスポンシブラッパーCSSを共通コンポーネント化
+
+---
+
 作成日：2026年9月2日　Fomalhaut Archive デザイン仕様
+更新：2026年9月3日（動画埋め込み・データ管理方式を追記）
