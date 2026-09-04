@@ -59,12 +59,13 @@
         "embed_script": "https://embed.nicovideo.jp/watch/sm46744050/script?w=320&h=180"
       },
       {
-        "id": "fm-02",
-        "title": "古代のプロトコル (25/5 Cycle)",
-        "cycle": "25 MIN FOCUS / 5 MIN BREAK",
-        "genre": "Celtic / Lo-Fi",
-        "url": "https://www.youtube.com/watch?v=example5"
-      }
+  "id": "fm-02",
+  "title": "【ポモドーロ】集中用・緩急あるケルト音楽【作業用BGM】",
+  "cycle": "25 MIN FOCUS / 5 MIN BREAK",
+  "genre": "Celtic / Lo-Fi",
+  "url": "https://www.nicovideo.jp/watch/sm46759237",
+  "embed_script": "https://embed.nicovideo.jp/watch/sm46759237/script?w=320&h=180"
+}
     ]
   },
   "lite_vault": {
