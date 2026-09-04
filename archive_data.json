@@ -69,27 +69,28 @@
     ]
   },
   "lite_vault": {
-    "title": "軽量記憶アーカイブ",
-    "subtitle": "Lite-Data Vault / Express Tracks",
-    "desc": "短時間のタスクに最適化されたコンパクトな記憶データ。即座に思考を同期。",
-    "items": [
-      {
-        "id": "lv-01",
-        "title": "【作業用】ボサノバBGM",
-        "duration": "10:00",
-        "type": "NICONICO EMBED",
-        "url": "https://www.nicovideo.jp/watch/sm46672963",
-        "embed_script": "https://embed.nicovideo.jp/watch/sm46672963/script?w=320&h=180"
-      },
-      {
-        "id": "lv-02",
-        "title": "クイックシンク・ショートトラック B",
-        "duration": "15:00",
-        "type": "SINGLE TRACK",
-        "url": "https://www.youtube.com/watch?v=example8"
-      }
-    ]
-  },
+  "title": "軽量記憶アーカイブ",
+  "subtitle": "Lite-Data Vault / Express Tracks",
+  "desc": "短時間のタスクに最適化されたコンパクトな記憶データ。即座に思考を同期。",
+  "items": [
+    {
+      "id": "lv-01",
+      "title": "【作業用】ボサノバBGM",
+      "duration": "20:43",
+      "type": "NICONICO EMBED",
+      "url": "https://www.nicovideo.jp/watch/sm46672963",
+      "embed_script": "https://embed.nicovideo.jp/watch/sm46672963/script?w=320&h=180"
+    },
+    {
+      "id": "lv-02",
+      "title": "【作業用BGM】蛍が淡く煌めく和風BGM",
+      "duration": "27:57",
+      "type": "NICONICO EMBED",
+      "url": "https://www.nicovideo.jp/watch/sm46759427",
+      "embed_script": "https://embed.nicovideo.jp/watch/sm46759427/script?w=320&h=180"
+    }
+  ]
+},
   "freq_lab": {
     "title": "周波数標本室",
     "subtitle": "Scientific / Noise / Tuning",
