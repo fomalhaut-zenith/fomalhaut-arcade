@@ -25,10 +25,23 @@
 
 body {
   background-color: var(--deep-void);
+  background-image: radial-gradient(circle at 50% 15%, rgba(0, 229, 255, 0.04), transparent 60%);
   color: var(--pale-ash);
   font-family: var(--font-jp);
   overflow-x: hidden;
   line-height: 1.7;
+}
+
+/* 粒状のノイズテクスチャ（有機的な粒子ノイズ） */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.035;
+  z-index: 9998;
+  pointer-events: none;
+  mix-blend-mode: overlay;
 }
 
 /* CRTスキャンライン・オーバーレイ（微弱アニメーション付き） */
@@ -212,6 +225,8 @@ h2 .jp-text {
 /* 共通アーカイブカード */
 .archive-card {
   background: var(--card-bg);
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
   border: 1px solid rgba(216, 224, 232, 0.15);
   border-radius: 6px;
   padding: 22px;
@@ -418,14 +433,34 @@ h2 .jp-text {
   box-shadow: 0 0 25px rgba(255, 176, 58, 0.3);
 }
 
-.game-icon {
+.game-icon-wrapper {
+  position: relative;
   width: 100px;
   height: 100px;
-  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 18px;
   border: 2px solid rgba(255, 176, 58, 0.4);
   background: #000;
+  overflow: hidden;
+}
+
+/* アイコンの上に薄くノイズとビネット（周辺減光）を乗せる */
+.game-icon-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.7);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.game-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .game-title {
