@@ -210,34 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. 外部通信アンテナモーダル制御 (Lit.link)
-    const openModalBtn = document.getElementById('open-modal-btn');
-    const closeModalBtn = document.getElementById('close-modal-btn');
-    const linkModal = document.getElementById('link-modal');
-
-    if (openModalBtn && linkModal && closeModalBtn) {
-        openModalBtn.addEventListener('click', () => {
-            linkModal.classList.add('active');
-        });
-
-        closeModalBtn.addEventListener('click', () => {
-            linkModal.classList.remove('active');
-        });
-
-        // モーダル背景クリックで閉じる
-        linkModal.addEventListener('click', (e) => {
-            if (e.target === linkModal) {
-                linkModal.classList.remove('active');
-            }
-        });
-
-        // ESCキーで閉じる
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && linkModal.classList.contains('active')) {
-                linkModal.classList.remove('active');
-            }
-        });
-    }
+    // モーダル制御は削除されました
 
     // 3. タイトルロゴのランダムなフリッカー（ノイズ）演出
     const logo = document.querySelector('.logo');

@@ -79,14 +79,15 @@
             <section id="transmission" class="transmission-section">
                 <h2><span>TRANSMISSION ANTENNA</span> <span class="divider">/</span> <span class="jp-text">発信経路</span></h2>
                 <div class="antenna-hub">
-                    <div class="antenna-graphic" id="open-modal-btn" role="button" tabindex="0">
+                    <a href="https://lit.link/fomalhaut_music" target="_blank" rel="noopener noreferrer" class="antenna-graphic" style="text-decoration: none; display: block;">
                         <div class="radar-sweep"></div>
                         <div class="antenna-icon">📡</div>
                         <div class="antenna-text">
-                            <span class="broadcast-label">SIGNAL BROADCAST standard frequencies</span>
-                            <span class="broadcast-sub">ESTABLISHING EXTERNAL LINK... [CLICK TO CONNECT]</span>
+                            <span class="broadcast-label" style="display:block; margin-bottom: 8px;">[TRANSMISSION TERMINAL: LINK_ID: FOMALHAUT_MUSIC]</span>
+                            <span class="broadcast-sub" style="display:block; margin-bottom: 4px;">外部波長への同期要求を送信中。<br>ESTABLISHING EXTERNAL LINK...<br>観測者の各配信プラットフォーム・SNSハブ（Lit.link）へ接続します。</span>
+                            <span class="broadcast-sub" style="color: var(--cyan-pulse); margin-top: 8px; display:inline-block;">CONNECT TO LIT.LINK &gt;&gt; https://lit.link/fomalhaut_music</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
@@ -127,25 +128,6 @@
         <footer style="text-align: center; margin-top: 40px; color: #555; font-size: 0.8rem; font-family: 'VT323', monospace;">
             <p>&copy; 2026 Fomalhaut Archive. All rights reserved. [OBSERVER: ACTIVE]</p>
         </footer>
-    </div>
-
-    <!-- 外部通信モーダル (Lit.link 導線) -->
-    <div id="link-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal-btn">&times;</button>
-            <div class="modal-header-terminal">[TRANSMISSION TERMINAL: LINK_ID: FOMALHAUT_MUSIC]</div>
-            <p class="modal-flavor">
-                外部波長への同期要求を送信中。<br>
-                <code>ESTABLISHING EXTERNAL LINK...</code><br>
-                観測者の各配信プラットフォーム・SNSハブ（Lit.link）へ接続します。
-            </p>
-            <div class="modal-actions">
-                <a href="https://lit.link/fomalhaut_music" target="_blank" rel="noopener noreferrer" class="litlink-btn">
-                    <span>CONNECT TO LIT.LINK &gt;&gt;</span>
-                    <span class="btn-sub">https://lit.link/fomalhaut_music</span>
-                </a>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>
