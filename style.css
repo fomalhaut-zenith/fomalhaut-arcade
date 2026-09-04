@@ -331,6 +331,13 @@ h2 .jp-text {
   align-items: center;
   padding: 16px 22px;
 }
+ /* 埋め込みプレイヤーがある場合は通常の縦並びレイアウトに戻す */
+     .sector-lite_vault .archive-card.embed-card {
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: stretch;
+       padding: 22px;
+     }
 .sector-lite_vault .card-title {
   margin-bottom: 0;
   font-size: 1rem;
