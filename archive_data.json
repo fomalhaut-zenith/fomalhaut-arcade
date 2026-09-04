@@ -1,6 +1,6 @@
 {
   "deep_sector": {
-    "title": "ディープアーカイブ",
+    "title": "深部アーカイブ",
     "subtitle": "Deep Sector Archive",
     "desc": "星々の深層を貫く、深層階級で観察された高密度の長編記憶群。",
     "items": [
@@ -93,20 +93,6 @@
     "subtitle": "Scientific / Noise / Tuning",
     "desc": "特定の波形データを分類する研究用領域。実験的インターフェース。",
     "items": [
-      {
-        "id": "fl-01",
-        "title": "周波数標本 528Hz - 幻想のノイズ",
-        "freq": "528Hz",
-        "type": "Sine Wave",
-        "url": "https://www.youtube.com/watch?v=example9"
-      },
-      {
-        "id": "fl-02",
-        "title": "ホワイトノイズ・スペクトル解析",
-        "freq": "White Noise",
-        "type": "Spectrum",
-        "url": "https://www.youtube.com/watch?v=example10"
-      },
       {
         "id": "fl-03",
         "title": "【完全比較】カラーノイズ7種 聴き比べ",
