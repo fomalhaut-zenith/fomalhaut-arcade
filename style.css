@@ -118,7 +118,6 @@ body::before {
 .logo {
   font-family: var(--font-cinzel);
   font-weight: 600;
-  font-style: italic;
   font-size: 3.5rem;
   color: var(--pale-ash);
   letter-spacing: 2px;
