@@ -28,6 +28,14 @@
     "desc": "静寂や星空を彷彿とさせる深層安息帯。薄いガラス越しに揺らぐ、アンビエント空間。",
     "items": [
       {
+        "id": "sc-new",
+        "title": "【睡眠用BGM】蒼い静寂が心と身体を癒す夜",
+        "duration": "01:00:00",
+        "type": "Sleep / Chill",
+        "url": "https://www.nicovideo.jp/watch/sm46756259",
+        "embed_script": "https://embed.nicovideo.jp/watch/sm46756259/script?w=320&h=180"
+      },
+      {
         "id": "sc-01",
         "title": "【睡眠用BGM】静かな夜に漂うアンビエント",
         "duration": "01:00:00",
