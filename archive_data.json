@@ -1,27 +1,20 @@
 {
-  "deep_sector": {
-    "title": "深部アーカイブ",
-    "subtitle": "Deep Sector Archive",
-    "desc": "星々の深層を貫く、深層階級で観察された高密度の長編記憶群。",
-    "items": [
-      {
-        "id": "ds-01",
-        "title": "深層の観察記録 #01 - 抽象の残響",
-        "duration": "02:14:00",
-        "tracks": "12 Tracks",
-        "code": "SEC-DEEP-001",
-        "url": "https://www.youtube.com/watch?v=example1"
-      },
-      {
-        "id": "ds-02",
-        "title": "深層の観察記録 #02 - 凍てついた水脈",
-        "duration": "03:45:00",
-        "tracks": "18 Tracks",
-        "code": "SEC-DEEP-002",
-        "url": "https://www.youtube.com/watch?v=example2"
-      }
-    ]
-  },
+ "deep_sector": {
+  "title": "深部アーカイブ",
+  "subtitle": "Deep Sector Archive",
+  "desc": "星々の深層を貫く、深層階級で観察された高密度の長編記憶群。",
+  "items": [
+    {
+      "id": "ds-01",
+      "title": "【作業用BGM】時が止まったガラスの聖域で雨宿り",
+      "duration": "00:00:00",
+      "tracks": "1 Track",
+      "code": "SEC-DEEP-001",
+      "url": "https://www.nicovideo.jp/watch/sm46758754",
+      "embed_script": "https://embed.nicovideo.jp/watch/sm46758754/script?w=320&h=180"
+    }
+  ]
+},
   "sleep_corridor": {
     "title": "眠りの回廊",
     "subtitle": "Sleep / Ambient",
