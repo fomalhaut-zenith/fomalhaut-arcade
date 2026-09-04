@@ -321,10 +321,6 @@ h2 .jp-text {
 }
 
 /* 4. 軽量記憶アーカイブ (Lite-Data Vault): コンパクト横長リスト */
-.sector-lite_vault .sector-cards-grid {
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
 .sector-lite_vault .archive-card {
   flex-direction: row;
   justify-content: space-between;
