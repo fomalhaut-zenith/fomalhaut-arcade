@@ -2,7 +2,7 @@
  "deep_sector": {
   "title": "深部アーカイブ",
   "subtitle": "Deep Sector Archive",
-  "desc": "星々の深層を貫く、深層階級で観察された高密度の長編記憶群。",
+  "desc": "星々を貫く深層階級で観測された高密度の長編記憶群。",
   "items": [
     {
       "id": "ds-01",
@@ -18,7 +18,7 @@
   "sleep_corridor": {
     "title": "眠りの回廊",
     "subtitle": "Sleep / Ambient",
-    "desc": "静寂や星空を彷彿とさせる深層安息帯。薄いガラス越しに揺らぐ、アンビエント空間。",
+    "desc": "深海や星空を彷彿とさせる深層アンビエント空間。",
     "items": [
       {
         "id": "sc-new",
@@ -48,7 +48,7 @@
   "flash_memory": {
     "title": "短編記憶断片集",
     "subtitle": "Flash Memory / 30min Cycles",
-    "desc": "25分の「集中」と5分の「休息」という最小単位の周期（ポモドーロ）に切り分けられた思考データ。",
+    "desc": "25分の「集中」と5分の「休息」という周期（ポモドーロ）に切り分けられた思考データ。",
     "items": [
       {
         "id": "fm-01",
@@ -71,7 +71,7 @@
   "lite_vault": {
   "title": "軽量記憶アーカイブ",
   "subtitle": "Lite-Data Vault / Express Tracks",
-  "desc": "短時間のタスクに最適化されたコンパクトな記憶データ。即座に思考を同期。",
+  "desc": "短時間のタスクに最適化されたコンパクトな記憶データ。",
   "items": [
     {
       "id": "lv-01",
@@ -125,7 +125,7 @@
   "vocal_shelf": {
     "title": "蒐集品棚",
     "subtitle": "Vocal Specimen Shelf",
-    "desc": "観察者が採集した歌唱記憶の展示棚。音色と旋律の標本。",
+    "desc": "観察者が採集したデジタル歌唱記憶の展示棚。音色と旋律の標本。",
     "items": [
       {
         "id": "vs-01",
@@ -140,7 +140,7 @@
   "glitch_sector": {
     "title": "エラー・記録不備あり",
     "subtitle": "Glitch / Analog Horror / Unstable",
-    "desc": "フレームの歪み、テキストの一部破損が観察される不安定な領域。",
+    "desc": "フレームの歪み、テキストの一部破損が観測される不安定な標本。",
     "items": [
       {
         "id": "gs-01",
