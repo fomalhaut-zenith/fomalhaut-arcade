@@ -36,14 +36,15 @@
         "url": "https://www.nicovideo.jp/watch/sm46692800",
         "embed_script": "https://embed.nicovideo.jp/watch/sm46692800/script?w=320&h=180"
       },
-      {
-        "id": "sc-02",
-        "title": "深緑の周波 - 432Hz Ambient",
-        "duration": "01:00:00",
-        "type": "Ambient",
-        "url": "https://www.youtube.com/watch?v=example3"
-      }
-    ]
+     {
+  "id": "sc-02",
+  "title": "【睡眠用BGM】深い眠りへ誘う夜空の旅",
+  "duration": "00:00:00",
+  "type": "Sleep / Chill",
+  "url": "https://www.nicovideo.jp/watch/sm46772231",
+  "embed_script": "https://embed.nicovideo.jp/watch/sm46772231/script?w=320&h=180"
+}
+      ]
   },
   "flash_memory": {
     "title": "短編記憶断片集",
