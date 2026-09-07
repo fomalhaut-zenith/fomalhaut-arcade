@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (item.embed_script) {
                     const embedContainer = document.createElement('div');
                     embedContainer.className = 'archive-card embed-card';
-
+                    embedContainer.setAttribute('data-video-id', item.id); 
+                    
                     let topMeta = '';
                     let bottomDetails = '';
 
@@ -155,7 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.target = '_blank';
                 card.rel = 'noopener noreferrer';
                 card.className = 'archive-card';
-
+                card.setAttribute('data-video-id', item.id); 
+                
                 // エリア固有のHTML構造・スペック表記の組み分け
                 let topMeta = '';
                 let bottomDetails = '';
