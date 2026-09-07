@@ -489,6 +489,17 @@ h2 .jp-text {
 .game-card:hover .game-icon {
   filter: brightness(0.95) contrast(1.05) grayscale(0%);
 }
+.dos-bar {
+  color: var(--pale-ash);
+  opacity: 0.85;
+}
+
+.game-status-line {
+  color: rgba(216, 224, 232, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .game-title {
   font-family: var(--font-mono);
@@ -620,6 +631,15 @@ h2 .jp-text {
   align-items: flex-start;
   gap: 24px;
 }
+
+.profile p {
+  color: rgba(216, 224, 232, 0.85);
+}
+
+.profile strong {
+  color: var(--pale-ash);
+}
+
 .profile-icon {
   width: 72px;
   height: 72px;
