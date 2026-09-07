@@ -88,7 +88,15 @@
       "type": "NICONICO EMBED",
       "url": "https://www.nicovideo.jp/watch/sm46759427",
       "embed_script": "https://embed.nicovideo.jp/watch/sm46759427/script?w=320&h=180"
-    }
+    },
+   {
+    "id": "lv-03",
+    "title": "【作業用BGM】16bitレトロゲーム風BGM",
+    "duration": "00:00",
+    "type": "NICONICO EMBED",
+    "url": "https://www.nicovideo.jp/watch/sm46763056",
+    "embed_script": "https://embed.nicovideo.jp/watch/sm46763056/script?w=320&h=180"
+  }
   ]
 },
   "freq_lab": {
