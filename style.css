@@ -26,15 +26,23 @@
 }
 
 body {
-  background-color: var(--deep-void);
+  background-color: #0b0d12;
   background-image: 
     radial-gradient(circle at 50% 15%, rgba(0, 229, 255, 0.05) 0%, transparent 60%),
-    radial-gradient(circle at 80% 80%, rgba(255, 176, 58, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 80% 80%, rgba(255, 176, 58, 0.03) 0%, transparent 50%),
+    linear-gradient(rgba(11,13,18,0.75), rgba(11,13,18,0.9) 40%, rgba(11,13,18,0.97) 100%),
+    url('assets/bg/header_starry_sky.jpg');
+  background-size: auto, auto, cover, cover;
+  background-position: center, center, center 15%, center 15%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--pale-ash);
-  font-family: var(--font-jp);
-  overflow-x: hidden;
-  line-height: 1.7;
+}
+
+/* モバイルではbackground-attachment: fixedが不安定なため、scrollに切り替え */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll, scroll, scroll, scroll;
+  }
 }
 
 /* 粒状のノイズテクスチャ（有機的な粒子ノイズ） */
