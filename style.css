@@ -609,9 +609,16 @@ h2 .jp-text {
 
 .profile {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 0.95rem;
+  align-items: flex-start;
+  gap: 24px;
+}
+.profile-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+  flex-shrink: 0;
 }
 
 .sns-note {
