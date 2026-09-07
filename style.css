@@ -33,7 +33,7 @@ body {
     linear-gradient(rgba(11,13,18,0.75), rgba(11,13,18,0.9) 40%, rgba(11,13,18,0.97) 100%),
     url('assets/bg/header_starry_sky.jpg');
   background-size: auto, auto, cover, cover;
-  background-position: center, center, center 15%, center 15%;
+  background-position: center, center, center 60%, center 60%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
