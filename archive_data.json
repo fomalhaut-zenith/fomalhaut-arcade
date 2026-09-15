@@ -101,11 +101,19 @@
    {
     "id": "lv-03",
     "title": "【作業用BGM】16bitレトロゲーム風BGM",
-    "duration": "00:00",
+    "duration": "21:46",
     "type": "NICONICO EMBED",
     "url": "https://www.nicovideo.jp/watch/sm46763056",
     "embed_script": "https://embed.nicovideo.jp/watch/sm46763056/script?w=320&h=180"
-  }
+  },
+   {
+  "id": "lv-04",
+  "title": "【作業用BGM】温かい紅茶とケルトの調べ",
+  "duration": "22:32",
+  "type": "NICONICO EMBED",
+  "url": "https://www.nicovideo.jp/watch/sm46803461",
+  "embed_script": "https://embed.nicovideo.jp/watch/sm46803461/script?w=320&h=180"
+}
   ]
 },
   "freq_lab": {
